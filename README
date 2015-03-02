@@ -1,0 +1,10 @@
+how to run: 
+./ssd TRACE_NAME PARAMETER_FILE TIME_SCALE 
+
+example:
+./ssd hm_1_16 88_10 50 
+
+time_scale would be 1/50 
+parameter file would be page.parameters.88_10 
+stat and output files would be stat1_hm_1_16_88_10.50 ... 
+
