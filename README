@@ -1,10 +1,25 @@
+parameter file needs to be in this form: page.parameters_PNAME 
+
+
 how to run: 
-./ssd TRACE_NAME PARAMETER_FILE TIME_SCALE 
+./ssd TRACE_NAME NAME TIME_SCALE 
+
+output: 
+
+stat1_TRACE_NAME_PNAME.TIME_SCALE 
+stat2_TRACE_NAME_PNAME.TIME_SCALE 
+output_TRACE_NAME_PNAME.TIME_SCALE 
 
 example:
-./ssd hm_1_16 88_10 50 
+parameter file is: page.parameters_88_0 
+trace file is: hm_1 
 
-time_scale would be 1/50 
-parameter file would be page.parameters.88_10 
-stat and output files would be stat1_hm_1_16_88_10.50 ... 
+./ssd hm_1 88_0 5
+
+when time scale is 5, the time slot will be divided by 5 
+
+output files: 
+stat1_hm_1_88_0.5 
+stat2_hm_1_88_0.5
+output_hm_1_88_0.5 
 
